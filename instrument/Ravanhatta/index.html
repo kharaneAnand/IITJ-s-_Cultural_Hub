@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravanhatta - Traditional Indian String Instrument</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ravanhatta</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interactive">Interactive Guide</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover the Ravanhatta</h1>
+            <h2>An Ancient Indian Folk String Instrument</h2>
+            <a href="#interactive" class="btn">Explore Parts</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About the Ravanhatta</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Ravanhatta (or Rawanhattha) is one of the oldest string instruments of India. Its origin dates back to ancient times and is associated with King Ravana from the epic Ramayana. According to legend, Ravana created this instrument as an offering to Lord Shiva.</p>
+                    <p>This bowed stringed instrument is primarily played in Rajasthan, Gujarat, and parts of Pakistan. It produces a haunting, resonant sound that is integral to the folk music traditions of these regions.</p>
+                    <p>The instrument consists of a bowl-shaped resonator covered with goat skin, a wooden neck, and strings typically made from horsehair or steel. The bow (called "gaz") is usually made from bamboo or wood and horsehair.</p>
+                </div>
+                <div class="about-image">
+                    <img src="Images/image.png" alt="Ravanhatta instrument full view" id="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interactive" class="interactive-section">
+        <div class="container">
+            <h2 class="section-title">Interactive Guide</h2>
+            <p class="subtitle">Hover over or click on parts of the Ravanhatta to learn more</p>
+            
+            <div class="interactive-container">
+                <div class="instrument-image">
+                    <div class="instrument-image">
+                        <img src="Images/image.png" alt="Ravanhatta" id="ravanhatta-img">
+                        <!-- Remove the entire <map> element since we're using JS-generated hotspots -->
+                    </div>
+                   
+                </div> -->
+                
+                <div class="part-info" id="part-info">
+                    <h3 id="part-name">Click or hover on a part</h3>
+                    <p id="part-description">Explore the Ravanhatta by interacting with the image.</p>
+                    <div id="part-details"></div>
+                </div>
+            </div>
+            
+            <div class="parts-list">
+                <div class="part-item" data-part="sound-bowl">
+                    <h4>Sound Bowl</h4>
+                    <p>The resonating chamber usually made from a hollowed coconut shell covered with goat skin.</p>
+                </div>
+                <div class="part-item" data-part="neck">
+                    <h4>Neck</h4>
+                    <p>A wooden rod often decorated with intricate carvings that holds the strings.</p>
+                </div>
+                <div class="part-item" data-part="tuning-pegs">
+                    <h4>Tuning Pegs</h4>
+                    <p>Wooden pegs used to adjust the tension and tuning of the strings.</p>
+                </div>
+                <div class="part-item" data-part="bridge">
+                    <h4>Bridge</h4>
+                    <p>Supports the strings and transfers vibrations to the sound bowl.</p>
+                </div>
+                <div class="part-item" data-part="strings">
+                    <h4>Strings</h4>
+                    <p>Traditionally made from gut or horsehair, modern versions may use metal strings. Usually has 1-2 main strings and several sympathetic strings.</p>
+                </div>
+                <div class="part-item" data-part="bow">
+                    <h4>Bow (Gaz)</h4>
+                    <p>A curved piece of wood with horsehair strung between its ends, used to play the instrument by drawing across the strings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history-section">
+        <div class="container">
+            <h2 class="section-title">History & Cultural Significance</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Ancient Origins</h3>
+                        <p>The Ravanhatta is believed to have originated over 5000 years ago. According to Hindu mythology, it was created by King Ravana as an offering to Lord Shiva.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Regional Variations</h3>
+                        <p>The instrument spread throughout Northwestern India and is especially popular in Rajasthan, where it became an integral part of folk music traditions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Cultural Significance</h3>
+                        <p>Often used by wandering bards to accompany epic stories and folk tales. The instrument plays a crucial role in preserving oral traditions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Modern Revival</h3>
+                        <p>Contemporary musicians have begun incorporating the Ravanhatta into fusion music, bringing this ancient instrument to global audiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="videos-section">
+        <div class="container">
+            <h2 class="section-title">Watch & Listen</h2>
+            <div class="video-container">
+                <!-- Video 1: Traditional Ravanhatta Performance -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/9P_S5Kpahgs" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                       
+                    </div>
+                    <h3>Traditional Ravanhatta Performance</h3>
+                </div>
+    
+                <!-- Video 2: How the Ravanhatta is Made -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/aYLrOyzADFA" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                      
+                    </div>
+                    <h3>How the Ravanhatta is Made</h3>
+                </div>
+    
+                <!-- Video 3: Learning to Play the Ravanhatta -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/fBD-1tABcr4" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                       
+                    </div>
+                    <h3>Learning to Play the Ravanhatta</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about the Ravanhatta? Want to learn more about this wonderful instrument? Feel free to reach out!</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>b23ee1035@iitj.ac.in</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+918767309278</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jaipur, Rajasthan, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Ravanhatta</h2>
+                    <p>Preserving the legacy of ancient Indian music</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#interactive">Interactive Guide</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Lets have a Chat </h3>
+                    <p>connect with me </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Connect</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ravanhatta (2025) . </p>
+                <p>&copy; Anand Kharane (B23EE1035) IIT Jodhpur ,  </p>
+                <!-- <P>Saketh Babburu(B23Me1059) IIt Jodhpur .</P> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
