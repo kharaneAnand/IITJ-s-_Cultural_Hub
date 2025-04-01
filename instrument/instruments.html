@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Musical Instruments</title>
+    <link rel="stylesheet" href="instruments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>Musical Heritage</span>
+            </div>
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#instrument">Instruments</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Traditional Musical Instruments</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Discover the rich heritage of musical instruments from around the world</p>
+            <div class="search-box" data-aos="fade-up" data-aos-delay="300">
+                <input type="text" id="searchInput" placeholder="Search for instruments...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Explore by Category</h2>
+            <div class="category-container">
+                <div class="category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon"><i class="fas fa-guitar"></i></div>
+                    <h3>String</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon"><i class="fas fa-drum"></i></div>
+                    <h3>Percussion</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon"><i class="fas fa-wind"></i></div>
+                    <h3>Wind</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon"><i class="fas fa-keyboard"></i></div>
+                    <h3>Keys</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+    <div id="instrument">
+        <div class="breadcrumb">
+            <a href="F:\sem4\Dc\dc3\index.html">Home</a> &gt; <span>Instruments</span>
+        </div>
+        
+       
+        <div class="filter-controls">
+            <div class="filter-group">
+                <label for="regionFilter">Region:</label>
+                <select id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="indian">Indian</option>
+                    <option value="middle-eastern">Middle Eastern</option>
+                    <option value="african">African</option>
+                    <option value="asian">Asian</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="name">Name</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="ancient">Most Ancient</option>
+                </select>
+            </div>
+            <button id="resetFilters" class="btn">Reset Filters</button>
+        </div>
+
+        <div class="instruments-grid" id="instrumentsGrid">
+            <!-- Instrument cards will be populated by JavaScript -->
+        </div>
+        
+        <div class="pagination">
+            <button id="loadMore" class="btn-primary">Load More</button>
+        </div>
+    </div>
+    </main>
+
+    <!-- Featured Instrument Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text" data-aos="fade-right">
+                    <h2>Instrument of the Month</h2>
+                    <h3>Ravanhatta</h3>
+                    <p>The Ravanhatta is a bowed string instrument, believed to have originated in Rajasthan, India, and is one of the oldest known instruments in Indian folk music. It is traditionally associated with the Bhopa community and is said to have been played by King Ravana of Lanka, from whom it derives its name. The instrument consists of a long bamboo neck, a resonator made from a coconut shell, and two main playing strings, along with sympathetic strings for resonance. Today, it remains an important part of folk traditions in Rajasthan and Gujarat.</p>
+                    <a href="Ravanhatta/index.html" class="btn-primary">Explore More</a>
+                </div>
+                <div class="featured-image" data-aos="fade-left">
+                    <img src="images/Ravanhatta.png" alt="Ravanhatta" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest additions to our instrument collection</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Musical Heritage</h3>
+                <p>Exploring the rich cultural legacy of traditional musical instruments from across the globe.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="dc3/index.html/#contact">About Us</a></li>
+                    <li><a href="#instrument">Instruments</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> IIT Jodhpur</li>
+                    <li><i class="fas fa-phone"></i> +91 8767309278</li>
+                    <li><i class="fas fa-envelope"></i> b23ee1035@iitj</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Musical Heritage. All rights reserved.</p>
+            <p>Anand Kharane(B23EE1035)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="instruments.js"></script>
+</body>
+</html>
