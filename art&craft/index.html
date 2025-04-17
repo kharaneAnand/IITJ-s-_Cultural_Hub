@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art and Craft of Rajasthan</title>
+    <link rel="stylesheet" href="css/instruments.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <span>Rajasthan Artistry</span>
+            </div>
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#instrument">Art Forms</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-media">
+            <img src="images/art-craft-bg.jpg" alt="Rajasthani art and craft background" class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Art and Craft of Rajasthan</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Discover the vibrant artistic heritage and exquisite craftsmanship of Rajasthan</p>
+            <div class="search-box" data-aos="fade-up" data-aos-delay="300">
+                <input type="text" id="searchInput" placeholder="Search for art forms...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Explore by Category</h2>
+            <div class="category-container">
+                <div class="category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon"><i class="fas fa-brush"></i></div>
+                    <h3>Paintings</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                    <h3>Textiles</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Jewelry</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Pottery</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+    <div id="instrument">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <span>Art Forms</span>
+        </div>
+        
+        <div class="filter-controls">
+            <div class="filter-group">
+                <label for="regionFilter">Region:</label>
+                <select id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="jodhpur">Jodhpur</option>
+                    <option value="udaipur">Udaipur</option>
+                    <option value="jaisalmer">Jaisalmer</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="name">Name</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="ancient">Traditional</option>
+                </select>
+            </div>
+            <button id="resetFilters" class="btn">Reset Filters</button>
+        </div>
+
+        <div class="instruments-grid" id="instrumentsGrid">
+            <!-- Art form cards will be populated by JavaScript -->
+        </div>
+        
+        <div class="pagination">
+            <button id="loadMore" class="btn-primary">Load More</button>
+        </div>
+    </div>
+    </main>
+
+    <!-- Featured Art Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text" data-aos="fade-right">
+                    <h2>Art Form of the Month</h2>
+                    <h3>Blue Pottery</h3>
+                    <p>Blue Pottery is a unique craft of Jaipur that traces its origins to Persian artisans. Unlike traditional Indian pottery, it doesn't use clay but rather a special dough made from quartz stone powder, powdered glass, multani mitti, borax, gum and water. The distinctive blue color comes from cobalt oxide, while other colors are derived from copper oxide (green) and manganese dioxide (black). The art form was brought to Jaipur in the early 19th century and has since become synonymous with Rajasthani craftsmanship. Each piece is hand-painted with intricate floral and geometric patterns, making them highly prized decorative items. The technique produces lightweight yet durable pottery that's both beautiful and functional.</p>
+                    <a href="blue-pottery/index.html" class="btn-primary">Explore More</a>
+                </div>
+                <div class="featured-image" data-aos="fade-left">
+                    <img src="images/blue-pottery.png" alt="Blue Pottery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest discoveries about Rajasthan's art and craft</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required="">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Rajasthan Artistry</h3>
+                <p>Exploring the vibrant artistic heritage and exquisite craftsmanship of Rajasthan.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#instrument">Art Forms</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> IIT Jodhpur</li>
+                    <li><i class="fas fa-phone"></i> +91 90909090</li>
+                    <li><i class="fas fa-envelope"></i> b23ee1089@iitj</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>� 2025 Rajasthan Artistry. All rights reserved.</p>
+            <p>Lalit Mohan (B23EE1089)</p>
+        </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/instruments.js"></script>
+</body>
+</html>
