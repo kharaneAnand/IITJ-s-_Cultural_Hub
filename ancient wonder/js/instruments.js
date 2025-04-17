@@ -5,7 +5,7 @@ const monuments = [
         name: 'Mehrangarh Fort',
         description: 'One of the largest forts in India, towering 410 feet above Jodhpur with magnificent palaces and museums',
         image: 'images/mehrangarh.png',
-        link: 'mehrangarh/index.html',
+        link: 'Mehrangarh/index.html',
         category: 'Fort',
         region: 'jodhpur',
         popularity: 95,
