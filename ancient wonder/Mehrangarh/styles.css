@@ -1,0 +1,399 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: #f9f7f2;
+    border-bottom: 1px solid #e6e1d6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #8b4513;
+}
+
+/* Navigation Styles */
+.desktop-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.desktop-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5em 0;
+    position: relative;
+}
+
+.desktop-nav a:hover {
+    color: #8b4513;
+}
+
+.desktop-nav a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8b4513;
+    transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover:after {
+    width: 100%;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: #8b4513;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f7f2;
+    padding: 1em;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 1px solid #e6e1d6;
+}
+
+.mobile-nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.8em;
+    font-weight: 500;
+    border-bottom: 1px solid #e6e1d6;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #f0e9d9;
+    color: #8b4513;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('mehrangarh-fort.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Mehrangarh Heritage Section with Multiple Background Images */
+.mehrangarh-heritage {
+    background-image: 
+        url('mehrangarh-detail.jpg'), 
+        url('jodhpur-blue-city.jpg');
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 30%, cover;
+    padding: 60px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    margin: 2em 0;
+    border-radius: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mehrangarh-heritage h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: white;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 0.2em;
+}
+
+.mehrangarh-heritage p {
+    font-size: 1.2em;
+    max-width: 70%;
+    margin-bottom: 1.5em;
+}
+
+.heritage-buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.heritage-button {
+    display: inline-block;
+    background-color: rgba(139, 69, 19, 0.8);
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.heritage-button:hover {
+    background-color: rgba(139, 69, 19, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Sections */
+section {
+    padding: 3em 10%;
+    margin: 2em 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+    background-color: #f5efe0;
+}
+
+section h2 {
+    color: #8b4513;
+    margin-bottom: 1em;
+    font-size: 2em;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 0.5em;
+}
+
+section p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+/* About Section */
+.about-container, .architecture-container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.about-image, .architecture-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img, .architecture-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img, .architecture-image:hover img {
+    transform: scale(1.03);
+}
+
+.about-content, .architecture-content {
+    flex: 1;
+}
+
+.about-content p, .architecture-content p {
+    text-align: justify;
+}
+
+/* Fun Facts Section */
+.funfacts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.funfact-card {
+    background-color: #f9f7f2;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 250px;
+}
+
+.funfact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.funfact-icon {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.funfact-card h3 {
+    color: #8b4513;
+    margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2em 0;
+    margin-top: 3em;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5em;
+}
+
+.footer-nav a:hover {
+    color: #e6e1d6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mehrangarh-heritage {
+        background-size: 40%, cover;
+    }
+    
+    .mehrangarh-heritage p {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .about-container, .architecture-container {
+        flex-direction: column;
+    }
+    
+    .mehrangarh-heritage {
+        padding: 30px;
+        background-image: url('jodhpur-blue-city.jpg');
+        background-size: cover;
+    }
+    
+    .mehrangarh-heritage p {
+        max-width: 100%;
+    }
+    
+    .heritage-buttons {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+        max-width: 90%;
+    }
+    
+    section {
+        padding: 2em 5%;
+    }
+    
+    .funfacts-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-nav {
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+        padding: 0.3em;
+    }
+    
+    .mehrangarh-heritage h2 {
+        font-size: 2em;
+    }
+    
+    section h2 {
+        font-size: 1.8em;
+    }
+    
+    .funfact-card {
+        min-height: auto;
+    }
+}
