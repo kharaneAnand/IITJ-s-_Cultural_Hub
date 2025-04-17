@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Wonders of Rajasthan</title>
+    <link rel="stylesheet" href="css/instruments.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-fort-awesome"></i>
+                <span>Rajasthan Heritage</span>
+            </div>
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#instrument">Monuments</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-media">
+            <img src="images/ancientw.png" alt="Ancient wonders background" class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Ancient Wonders of Rajasthan</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Discover the magnificent architectural heritage of Rajasthan's glorious past</p>
+            <div class="search-box" data-aos="fade-up" data-aos-delay="300">
+                <input type="text" id="searchInput" placeholder="Search for monuments...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Explore by Type</h2>
+            <div class="category-container">
+                <div class="category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon"><i class="fas fa-fort-awesome"></i></div>
+                    <h3>Forts</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon"><i class="fas fa-archway"></i></div>
+                    <h3>Palaces</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon"><i class="fas fa-place-of-worship"></i></div>
+                    <h3>Temples</h3>
+                </div>
+                <div class="category" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon"><i class="fas fa-monument"></i></div>
+                    <h3>Havelis</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+    <div id="instrument">
+        <div class="breadcrumb">
+            <a href="F:\sem4\Dc\dc3\index.html">Home</a> > <span>Monuments</span>
+        </div>
+        
+        <div class="filter-controls">
+            <div class="filter-group">
+                <label for="regionFilter">Region:</label>
+                <select id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="indian">Jaipur</option>
+                    <option value="middle-eastern">Jodhpur</option>
+                    <option value="african">Udaipur</option>
+                    <option value="asian">Jaisalmer</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="name">Name</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="ancient">Most Ancient</option>
+                </select>
+            </div>
+            <button id="resetFilters" class="btn">Reset Filters</button>
+        </div>
+
+        <div class="instruments-grid" id="instrumentsGrid">
+            <!-- Monument cards will be populated by JavaScript -->
+        </div>
+        
+        <div class="pagination">
+            <button id="loadMore" class="btn-primary">Load More</button>
+        </div>
+    </div>
+    </main>
+
+    <!-- Featured Monument Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text" data-aos="fade-right">
+                    <h2>Monument of the Month</h2>
+                    <h3>Mehrangarh Fort</h3>
+                    <p>Mehrangarh Fort, located in Jodhpur, is one of the largest forts in India. Built around 1460 by Rao Jodha, the fort stands majestically on a 125-meter high hill and is surrounded by thick walls. Inside its boundaries there are several palaces known for their intricate carvings and expansive courtyards. The fort museum houses an exquisite collection of palanquins, howdahs, royal cradles, miniatures, musical instruments, costumes and furniture. The fort has witnessed many battles and its walls still carry the scars of cannonball hits. Today, it stands as a magnificent testament to Rajasthan's royal heritage and offers breathtaking views of the blue city of Jodhpur.</p>
+                    <a href="Mehrangarh/index.html" class="btn-primary">Explore More</a>
+                </div>
+                <div class="featured-image" data-aos="fade-left">
+                    <img src="images/mehrangarh.png" alt="Mehrangarh Fort">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest discoveries about Rajasthan's heritage</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required="">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Rajasthan Heritage</h3>
+                <p>Exploring the magnificent architectural wonders of Rajasthan's glorious past.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="dc3/index.html/#contact">About Us</a></li>
+                    <li><a href="#instrument">Monuments</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> IIT Jodhpur</li>
+                    <li><i class="fas fa-phone"></i> +91 90909090</li>
+                    <li><i class="fas fa-envelope"></i> b23ee1089@iitj</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>� 2025 Rajasthan Heritage. All rights reserved.</p>
+            <p>Lalit Mohan(b23ee1089)</p>
+        </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/instruments.js"></script>
+</body>
+</html>
